@@ -27,10 +27,10 @@
 					<a class="nav-link active" href="menuutama.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Cek Pembayaran</a>
+					<a class="nav-link" href="formtagihan.php" target="frmmenu">Tagihan</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Daftar Tagihan</a>
+					<a class="nav-link" href="formmahasiswa.php" target="frmmenu">Mahasiswa</a>
 				</li>
 				<li class="nav-item dropdown">
 					 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Laporan</a>
@@ -54,6 +54,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
+			<iframe name="frmmenu" width="100%" height="500px"></iframe>
 		</div>
 	</div>
 </div>
