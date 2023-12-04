@@ -4,11 +4,11 @@ if (isset($_GET['NPM'])) {
     $NPM=filter_var($_GET['NPM'],FILTER_SANITIZE_STRING);
     $sql="select NPM,NamaMahasiswa from mahasiswa where NPM='".$NPM."'";
     $q=mysqli_query($koneksi,$sql);
-    $r=mysqli_fetch_array($q);
+    $r=mysqli_fetch_assoc($q);
     $hasil=array();
     do {
         $hasil= $r;
-    }while($r=mysqli_fetch_array($q));
+    }while($r=mysqli_fetch_assoc($q));
     $hasil=json_encode($hasil);
     echo $hasil;
     mysqli_close($koneksi);
