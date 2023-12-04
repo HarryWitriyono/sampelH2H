@@ -6,9 +6,9 @@ if (isset($_GET['NPM'])) {
     $q=mysqli_query($koneksi,$sql);
     $r=mysqli_fetch_array($q);
     $hasil=array();
-    //do {
+    do {
         $hasil= $r;
-    //}while($r=mysqli_fetch_array($q));
+    }while($r=mysqli_fetch_array($q));
     $hasil=json_encode($hasil);
     echo $hasil;
     mysqli_close($koneksi);
